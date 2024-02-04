@@ -8,7 +8,7 @@ bot.start((ctx) => ctx.reply('Welcome! Use /categories to view categories.'));
 
 bot.command('categories', async (ctx) => {
     try {
-       const apiKey = '28356352-e2da-4834-990a-25fcbe065433';
+       const apiKey = '28356352-25fcbe065433';
 
         const form = new FormData();
         form.append('api_key', apiKey);
@@ -44,7 +44,7 @@ bot.command('categories', async (ctx) => {
 
 bot.command('id', async (ctx) => {
     try {
-        const apiKey = '28356352-e2da-4834-990a-25fcbe065433';
+        const apiKey = '28356352-4834-990a-25fcbe065433';
         const projectId = ctx.message.text.split(' ')[1];
 
         if (!projectId || isNaN(projectId)) {
@@ -95,7 +95,7 @@ User Badge: ${projectDetails.user_badge}
 
 bot.command('projectList', async (ctx) => {
     try {
-        const apiKey = '28356352-e2da-4834-990a-25fcbe065433';
+        const apiKey = '28356352-e2da-48325fcbe065433';
         const pageNumber = ctx.message.text.split(' ')[1] || 1; // If number input is null, default to page 1
 
         const form = new FormData();
@@ -140,7 +140,7 @@ User Badge: ${project.user_badge}
 
 bot.command('find', async (ctx) => {
     try {
-        const apiKey = '28356352-e2da-4834-990a-25fcbe065433';
+        const apiKey = '990a-25fcbe065433';
         const username = ctx.message.text.split(' ')[1];
 
         if (!username) {
@@ -195,7 +195,7 @@ bot.command('find', async (ctx) => {
 
 bot.command('detail', async (ctx) => {
     try {
-        const apiKey = '28356352-e2da-4834-990a-25fcbe065433';
+        const apiKey = '283563';
         const id = ctx.message.text.split(' ')[1];
         const username = ctx.message.text.split(' ')[2];
 
